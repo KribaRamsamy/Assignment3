@@ -1,11 +1,8 @@
 ﻿@model Assignment3.Areas.ContactDetails.Models.ContactDetails
 
-@{
-    ViewBag.Title = "Index";
-}
+<span> Contact Details
 @using (Html.BeginForm())
 {
-    <h2>Index</h2>
     @Html.Label("FirstName")
     <br/>
     @Html.TextBoxFor(m => m.FirstName)
@@ -61,4 +58,4 @@
     <br/>
     <input type="Submit" value="Create" />
 }
-
+</span>
