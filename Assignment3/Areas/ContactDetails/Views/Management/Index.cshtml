@@ -1,0 +1,64 @@
+﻿@model Assignment3.Areas.ContactDetails.Models.ContactDetails
+
+@{
+    ViewBag.Title = "Index";
+}
+@using (Html.BeginForm())
+{
+    <h2>Index</h2>
+    @Html.Label("FirstName")
+    <br/>
+    @Html.TextBoxFor(m => m.FirstName)
+    <br/>
+    @Html.Label("LastName")
+    <br/>
+    @Html.TextBoxFor(m => m.LastName)
+    <br/>
+    @Html.Label("Email")
+    <br/>
+    @Html.TextBoxFor(m => m.Email)
+    <br/>
+    @Html.Label("Home Phone")
+    <br/>
+    @Html.TextBoxFor(m => m.HomePhone.CountryCode)
+    @Html.TextBoxFor(m => m.HomePhone.AreaCode)
+    @Html.TextBoxFor(m => m.HomePhone.PhoneNumber)
+    <br/>
+    @Html.Label("Cell Phone")
+    <br/>
+    @Html.TextBoxFor(m => m.CellPhone.CountryCode)
+    @Html.TextBoxFor(m => m.CellPhone.AreaCode)
+    @Html.TextBoxFor(m => m.CellPhone.PhoneNumber)
+    <br/>
+    @Html.Label("Line1")
+    <br/>
+    @Html.TextBoxFor(m => m.HomeAddress.Line1)
+    <br/>
+    @Html.Label("Line2")
+    <br/>
+    @Html.TextBoxFor(m => m.HomeAddress.Line2)
+    <br/>
+    @Html.Label("Line3")
+    <br/>
+    @Html.TextBoxFor(m => m.HomeAddress.Line3)
+    <br/>
+    @Html.Label("City")
+    <br/>
+    @Html.TextBoxFor(m => m.HomeAddress.City)
+    <br/>
+    @Html.Label("Province")
+    <br/>
+    @Html.TextBoxFor(m => m.HomeAddress.Province)
+    <br/>
+    @Html.Label("Country")
+    <br/>
+    @Html.TextBoxFor(m => m.HomeAddress.Country)
+    <br/>
+    @Html.Label("PostalCode")
+    <br/>
+    @Html.TextBoxFor(m => m.HomeAddress.PostalCode)
+    <br/>
+    <br/>
+    <input type="Submit" value="Create" />
+}
+
